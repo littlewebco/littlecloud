@@ -5,6 +5,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     loadTemplatePart("template-part/header.html", "header-container");
     loadTemplatePart("template-part/hero-section.html", "hero-section-container");
+    loadTemplatePart("template-part/header-navbar.html", "header-navbar-links");
     loadTemplatePart("template-part/hero-section-hosting.html", "hero-section-hosting-container");
     loadTemplatePart("template-part/web-hosting-pricing.html", "web-hosting-pricing");
 
@@ -33,6 +34,7 @@ function loadTemplatePart(path, containerId) {
 
 // List containing the paths for each script
 const scripts = [
+    "js/custom.js",
     "js/vendor.min.js",
     "plugins/fancybox/jquery.fancybox.min.js",
     "plugins/nice-select/jquery.nice-select.min.js",
@@ -55,7 +57,6 @@ const scripts = [
     "plugins/i18next/i18next.min.js",
     "plugins/i18next/i18nextXHRBackend.min.js",
     "plugins/i18next/jquery-i18next.min.js",
-    "js/custom.js"
 ];
 
 // Function to dynamically create and append script elements for each path in the scripts array
