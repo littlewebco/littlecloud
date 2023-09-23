@@ -1,162 +1,57 @@
-<!--Little Cloud Nav BAr -->
+<!-- START template header -->
+<header class="site-header header-with-right-menu dark-mode-texts site-header--absolute fixed-header-layout">
+    <div class="container-fluid pr-lg-9 pl-lg-9">
+        <!-- START navbar -->
+        <nav class="navbar site-navbar offcanvas-active navbar-expand-lg px-0">
+            <!-- START Logo header -->
+            <div class="brand-logo mr-8">
+                <a href="index.html">
+                    <!-- light version logo (logo must be black)-->
+                    <img src="image/logo-main-black.png" alt="" class="light-version-logo" />
+                    <!-- Dark version logo (logo must be White)-->
+                    <img src="image/logo-main-white.png" alt="" class="dark-version-logo" />
+                </a>
+            </div>
+            <!-- END Logo header -->
 
+            
 
-<!-- START hosting dropdown -->
-<li class="nav-item dropdown dropdown-mega">
-    <a data-i18n="[html]menu.hosting" class="nav-link dropdown-toggle coodiv-toggle-arrow" id="navbarDropdown90" href="#features" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hosting</a>
-    <div class="coodiv-megamenu-dropdown fullwidth-megamenu center white-bg dropdown-menu d-lg-flex px-lg-10 px-5 py-10" aria-labelledby="navbarDropdown90">
-        <div class="row justify-content-center mt-lg-6 mx-0 w-100">
-            <div class="col-md-8">
-                <h1 class="coodiv-text-5 title color-blackish-blue text-lg-left text-center w-100 d-block mb-14">
-                    <span data-i18n="[html]genaral.webhostingfirstsentess">We make this easy.</span>
-                    <span data-i18n="[html]genaral.webhostingfirstsentesssub" class="d-block mt-lg-0 mt-5 coodiv-text-11 color-blackish-blue-opacity fw-100">
-                        99.9% uptime guarantee, free Cpanel Migration, easy WordPress installs, and a free domain transfer.
+            <!-- START header main navbar -->
+            <div class="collapse navbar-collapse" id="mobile-menu">
+                <div class="navbar-nav-wrapper">
+                    <ul id="header-navbar-links" class="navbar-nav main-menu"></ul>
+                    <!-- Main header navbar -->
+                </div>
+            </div>
+            <!-- END header main navbar -->
+
+            <!-- START header right buttons -->
+            <div class="header-btn ml-auto ml-lg-10 mr-5 d-none d-xs-block position-relative">
+                <a data-i18n="Login" class="btn btn-warning coodiv-text-9" href="https://app.little.cloud/index.php?rp=/login">Login</a>
+                <a class="headerphone-number" href="https://app.little.cloud/register.php">or signup here</a>
+            </div>
+            <!-- END header right buttons -->
+
+            <!-- Mobile Menu Buttons-->
+            <button
+                class="navbar-toggler btn-close-off-canvas hamburger-icon border-0"
+                type="button"
+                data-toggle="collapse"
+                data-target="#mobile-menu"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="hamburger hamburger--squeeze js-hamburger">
+                    <span class="hamburger-box">
+                        <i class="feather icon-menu"></i>
+                        <i class="feather icon-x"></i>
                     </span>
-                </h1>
-
-                <div class="row justify-content-center mx-0">
-                    <div class="col-md-6 col-lg-4 mb-10">
-                        <div class="feature-widget d-sm-flex">
-                            <div class="widget-icon text-blue mr-0 mr-lg-6 mb-7 mb-md-0">
-                                <i class="feather icon-server"></i>
-                            </div>
-                            <div class="content">
-                                <h3 data-i18n="[html]genaral.bandwidthfeatures" class="title coodiv-text-9 mb-2 color-blackish-blue">Unmetered bandwidth</h3>
-                                <p data-i18n="[html]genaral.bandwidthtext" class="coodiv-text-11 color-blackish-blue-opacity mb-0">Bring in all the traffic you want, we got you!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-10">
-                        <div class="feature-widget d-sm-flex">
-                            <div class="widget-icon text-blue mr-0 mr-lg-6 mb-7 mb-md-0">
-                                <i class="fab fa-cpanel"></i>
-                            </div>
-                            <div class="content">
-                                <h3 data-i18n="[html]genaral.domainfeatures" class="title coodiv-text-9 mb-2 color-blackish-blue">FREE Cpanel Migration</h3>
-        
-                               <p data-i18n="[html]genaral.domaintext" class="coodiv-text-11 color-blackish-blue-opacity mb-0">We'll move you from your old provider.</p> 
-                            
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-10">
-                        <div class="feature-widget d-sm-flex">
-                            <div class="widget-icon text-blue mr-0 mr-lg-6 mb-7 mb-md-0">
-                                <i class="feather icon-shield"></i>
-                            </div>
-                            <div class="content">
-                                <h3 data-i18n="[html]genaral.sslfeatures" class="title coodiv-text-9 mb-2 color-blackish-blue">SSL certificate</h3>
-                                <p data-i18n="[html]genaral.ssltext" class="coodiv-text-11 color-blackish-blue-opacity mb-0">Show your visitors you take security seriously.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a data-i18n="[html]genaral.getstarted" class="btn btn-warning coodiv-text-9 d-block w-100 mx-4 mx-lg-0" href="web-hosting.html">Get started now</a>
-                </div>
-            </div>
-        </div>
+                </span>
+            </button>
+            <!--/ END Mobile Menu Buttons -->
+        </nav>
+        <!-- end navbar -->
     </div>
-</li>
-<!-- END hosting dropdown -->
-
-
-
-<!-- START domains dropdown -->
-<li class="nav-item dropdown dropdown-mega">
-    <a data-i18n="[html]menu.domains" class="nav-link dropdown-toggle coodiv-toggle-arrow" id="domaindropdown" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Domains</a>
-    <div class="coodiv-megamenu-dropdown mini-version center white-bg dropdown-menu d-lg-block pt-0" aria-labelledby="domaindropdown">
-        <div class="row justify-content-start mega-menu-header">
-            <a class="toggle-domain-s-t d-inline-block col-md-6 active-link-border pl-lg-10 pt-lg-8 pb-lg-5 pl-6 pt-4 pb-4 rounded-top-left-8" href="https://app.little.cloud/cart.php?a=add&domain=register">
-                <h1 class="coodiv-text-8 title color-blackish-blue text-left w-100 d-block">
-                    <span data-i18n="[html]genaral.snagyourdomain">Snag your fav domain today.</span><span class="d-block coodiv-text-11 color-blackish-blue-opacity fw-100">Search for your name now...</span>
-                </h1>
-            </a>
-
-            <a class="toggle-domain-s-t d-md-inline-block d-none col-md-6 not-active-link-border pl-lg-10 pt-lg-8 pb-lg-5 pl-6 pt-4 pb-4 rounded-top-right-8" href="dSLD.html">
-                <h1 class="coodiv-text-8 title color-blackish-blue text-left w-100 d-block">
-                    <span>Looking for a web3 domain?</span> <span class="d-block coodiv-text-11 color-blackish-blue-opacity fw-100">Dencentralised domains on Handshake & Ethereum</span>
-                </h1>
-            </a>
-        </div>
-        <!-- Disclaimer and Search Box on Domain dropdown -->
-        <div class="px-lg-10 pb-lg-10 pt-lg-13 pt-10 px-5 pb-8 mega-menu-body">
-            <div class="row justify-content-center">
-                <div class="col-xl-12 col-lg-7 col-md-8 col-sm-11">
-                    <div class="domain-search-form mb-8">
-                        <form action="https://app.little.cloud/cart.php?a=add&domain=register" method="POST">
-                            <div class="form-group position-relative text-lg-left text-center">
-                                <input class="form-control coodiv-text-9 border-separate mb-lg-6 mb-2 min-height-px-64" type="text" id="domain" name="query" placeholder="Enter your domain name" />
-                                <button data-i18n="[html]genaral.check" class="form-btn btn btn-primary mr-2 coodiv-abs-md-cr min-height-px-50 w-100 w-md-auto">check</button>
-                            </div>
-                        </form>
-                    </div> 
-                    <div class="form-bottom excerpt text-center">
-                        <p class="coodiv-text-11 mb-0 color-blackish-blue">
-                            <span data-i18n="[html]genaral.registerdomaintext">To register a new domain, transfer or change registrant information the registrant must explicitly</span><br class="d-none d-xs-block" />
-                            <span data-i18n="[html]genaral.viewaccept">View &amp; accept our</span> <a data-i18n="[html]genaral.privacypolicy" href="privacy-policy.html">Privacy Policy</a>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</li>
-<!-- END domains dropdown -->
-
-<!-- START pages dropdown
-<li class="nav-item dropdown dropdown-mega">
-    <a data-i18n="[html]menu.pages" class="nav-link dropdown-toggle coodiv-toggle-arrow" id="navbarDropdownPages" href="#features" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-
-    <div class="bg-transparent border-0 shadow-0 coodiv-megamenu-dropdown mini-version light-bg center white-bg dropdown-menu d-lg-block" aria-labelledby="navbarDropdownPages">
-        <div class="row justify-content-center">
-            <div class="col-md-4 pr-lg-0 mb-3 mb-lg-0">
-                <h5 class="d-block py-5 color-blackish-blue coodiv-text-9 pl-9 mb-0 rounded-top-10 coodiv-bg-gray-2-opacity-visible border-bottom-3-green">
-                    <span data-i18n="[html]genaral.corepages">Core pages</span> <span class="d-block color-blackish-blue-opacity coodiv-text-12 mt-n2 font-weight-light">simple sub text pages</span>
-                </h5>
-                <ul class="mega-menu-dropdown-ul border-opacity border-top-0 py-6 rounded-bottom-20 shadow-2 white-bg">
-                    <li class="drop-menu-item"><a data-i18n="[html]menu.aboutus" href="about.html">About Us</a></li>
-                    <li class="drop-menu-item"><a data-i18n="[html]menu.helpcentre" href="help-center.html">Help Center</a></li>
-                    <li class="drop-menu-item"><a data-i18n="[html]menu.allsupporttopics" href="all-topics.html">All Support Topics</a></li>
-                    <li class="drop-menu-item"><a data-i18n="[html]menu.serverstatus" href="status-page.html">Servers status</a></li>
-                    <li class="drop-menu-item"><a data-i18n="[html]menu.inchistory" href="incident-history.html">Incident History</a></li>
-                    <li class="drop-menu-item"><a data-i18n="[html]menu.incpost" href="incident-post.html">Incident Post</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-4 pr-0 pl-lg-2 mb-3 mb-lg-0">
-                <h5 class="d-block py-5 color-blackish-blue coodiv-text-9 pl-9 mb-0 rounded-top-10 coodiv-bg-gray-2-opacity-visible border-bottom-3-green">
-                    <span data-i18n="[html]genaral.planspages">Plans pages</span> <span class="d-block color-blackish-blue-opacity coodiv-text-12 mt-n2 font-weight-light">simple sub text pages</span>
-                </h5>
-                <ul class="mega-menu-dropdown-ul border-opacity border-top-0 py-6 rounded-bottom-20 shadow-2 white-bg">
-                    <li class="drop-menu-item"><a data-i18n="[html]menu.cloudvpshosting" href="cloudvps-hosting.html">Cloud Vps Hosting</a></li>
-                    <li class="drop-menu-item"><a data-i18n="[html]menu.cpanelresslers" href="cpanel-reseller.html">Cpanel Reseller</a></li>
-                    <li class="drop-menu-item"><a data-i18n="[html]menu.dedicatedservers" href="dedicated-servers.html">Dedicated Servers</a></li>
-                    <li class="drop-menu-item"><a data-i18n="[html]menu.domainsregisteration" href="domains-registration.html">Domains Registration</a></li>
-                    <li class="drop-menu-item"><a data-i18n="[html]menu.googleworkspace" href="google-workspace.html">Google Workspace</a></li>
-                    <li class="drop-menu-item"><a data-i18n="[html]menu.minecraftservers" href="minecraft.html">Minecraft Servers</a></li>
-                    <li class="drop-menu-item"><a data-i18n="[html]menu.sharedhosting" href="shared-hosting.html">Shared Hosting</a></li>
-                    <li class="drop-menu-item"><a data-i18n="[html]menu.vpshosting" href="vps-hosting.html">Vps Hosting</a></li>
-                    <li class="drop-menu-item"><a data-i18n="[html]menu.webhosting" href="web-hosting.html">Web hosting</a></li>
-                    <li class="drop-menu-item"><a data-i18n="[html]menu.websitebluider" href="website-builder.html">Website Builder</a></li>
-                    <li class="drop-menu-item"><a data-i18n="[html]menu.wordpresshosting" href="wordpress-hosting.html">Wordpress Hosting</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-4 pl-lg-2">
-                <h5 class="d-block py-5 color-blackish-blue coodiv-text-9 pl-9 mb-0 rounded-top-10 coodiv-bg-gray-2-opacity-visible border-bottom-3-green">
-                    <span data-i18n="[html]genaral.mainpages">Main pages</span> <span class="d-block color-blackish-blue-opacity coodiv-text-12 mt-n2 font-weight-light">simple sub text pages</span>
-                </h5>
-                <ul class="mega-menu-dropdown-ul border-opacity border-top-0 py-6 rounded-bottom-20 shadow-2 white-bg">
-                    <li class="drop-menu-item"><a data-i18n="[html]menu.forgetpass" href="forget-password.html">Forget Password</a></li>
-                    <li class="drop-menu-item"><a data-i18n="[html]menu.contactus" href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</li>
-END pages dropdown -->
-
-<!-- contact us link -->
-<li class="nav-item">
-    <a data-i18n="[html]menu.contactus" class="nav-link" href="https://app.little.cloud/submitticket.php?step=2&deptid=1" role="button" aria-expanded="false">Support</a>
-</li>
+</header>
+<!-- END template header -->
