@@ -5,8 +5,12 @@
 document.addEventListener("DOMContentLoaded", function () {
     loadTemplatePart("template-part/header.html", "header-container");
     loadTemplatePart("template-part/hero-section.html", "hero-section-container");
+    loadTemplatePart("template-part/hero-section-hosting.html", "hero-section-hosting-container");
+    loadTemplatePart("template-part/web-hosting-pricing.html", "web-hosting-pricing");
+
     loadTemplatePart("template-part/main-text-after-montagne.html", "main-text-after-montagne-container");
     loadTemplatePart("template-part/support-package.html", "support-package");
+    loadTemplatePart("template-part/google-workspace-details.html", "google-workspace");
     loadTemplatePart("template-part/footer.html", "footer-container");
 });
 
