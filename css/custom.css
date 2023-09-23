@@ -2,6 +2,16 @@
  * template Name: lwc_1
  -------------------------------------------------------------------*/
 
+ .from-text {
+  font-size: 16px;
+  text-align: left;
+  font-weight: 700;
+padding-left: 3%;
+  color: #4d4d4d; /* You can change the color value according to your design preference */
+}
+
+
+
   .hns-search {
     margin-top: 100px;
     margin-bottom: 100px;
