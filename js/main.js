@@ -1,21 +1,28 @@
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
     loadTemplatePart("template-part/header.html", "header-container");
-    loadTemplatePart("template-part/hero-section.html", "hero-section-container");
+    loadTemplatePart("template-part/hero-section.html", "hero-section-container", function() {
+        // Initialize Typed.js here after hero-section is loaded
+        if(document.querySelector("#typed")) {
+            var options = {
+                strings: ['professional email', 'managed cloud services',  'tech support', 'web hosting', 'resellers hosting', 'domains'],
+                typeSpeed: 120,
+                backSpeed: 50,
+                smartBackspace: true,
+                loop: true,
+            };
+            var typed = new Typed("#typed", options); // corrected the selector here
+        }
+    });
     loadTemplatePart("template-part/header-navbar.html", "header-navbar-links");
     loadTemplatePart("template-part/hero-section-hosting.html", "hero-section-hosting-container");
     loadTemplatePart("template-part/web-hosting-pricing.html", "web-hosting-pricing");
-
     loadTemplatePart("template-part/main-text-after-montagne.html", "main-text-after-montagne-container");
     loadTemplatePart("template-part/support-package.html", "support-package");
     loadTemplatePart("template-part/google-workspace-details.html", "google-workspace");
     loadTemplatePart("template-part/footer.html", "footer-container");
 });
 
-function loadTemplatePart(path, containerId) {
+function loadTemplatePart(path, containerId, callback) {
     fetch(path)
         .then(response => {
             if (!response.ok) {
@@ -25,14 +32,13 @@ function loadTemplatePart(path, containerId) {
         })
         .then(data => {
             document.getElementById(containerId).innerHTML = data;
+            if(callback) callback(); // Call callback if it's provided
         })
         .catch(error => {
             console.error("There has been a problem with your fetch operation:", error);
         });
 }
 
-
-// List containing the paths for each script
 const scripts = [
     "js/custom.js",
     "js/vendor.min.js",
@@ -59,7 +65,6 @@ const scripts = [
     "plugins/i18next/jquery-i18next.min.js",
 ];
 
-// Function to dynamically create and append script elements for each path in the scripts array
 function loadScripts(scriptArr) {
     scriptArr.forEach((src) => {
         const script = document.createElement('script');
@@ -69,5 +74,4 @@ function loadScripts(scriptArr) {
     });
 }
 
-// Call the function to load the scripts
 loadScripts(scripts);
