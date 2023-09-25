@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
     loadTemplatePart("template-part/header-navbar.html", "header-navbar-links");
+    loadTemplatePart("template-part/hero-section-features.html", "hero-section-features-container");
     loadTemplatePart("template-part/hero-section-hosting.html", "hero-section-hosting-container");
     loadTemplatePart("template-part/web-hosting-pricing.html", "web-hosting-pricing");
     loadTemplatePart("template-part/main-text-after-montagne.html", "main-text-after-montagne-container");
