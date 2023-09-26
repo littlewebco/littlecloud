@@ -560,9 +560,9 @@ a.headerphone-number {position: absolute;left: 0;bottom: -24px;height: auto;min-
 
 
 /*---------------- Page hero styles -----------------*/
-.hero-area-coodiv{background-image:linear-gradient(225deg,#7b11f9 0%,#7922d8 39%,#3636b2 100%);background-image:linear-gradient(225deg,#4e1098 0%,#1c5896 39%,#051729 100%);padding-bottom:5rem!important;padding-top:9.375rem!important;background-size:400% 400%;animation:gradient-animation 20s ease infinite}
+.hero-area-coodiv{background-image:linear-gradient(225deg,#7b11f9 0%,#7922d8 39%,#3636b2 100%);background-image:linear-gradient(225deg,#4e1098 0%,#1c5896 39%,#051729 100%);padding-bottom:15vh!important;padding-top: 20vh!important;background-size:400% 400%;animation:gradient-animation 20s ease infinite}
 .hero-area-coodiv.light-color-hero-area{background-image:linear-gradient(225deg,#f0f3fc 0%,#f9fafd 39%,#dee1ec 100%);background-image:linear-gradient(225deg,#f0f3fc 0%,#f9fafd 39%,#dee1ec 100%)}
-@media (min-width: 992px) {.hero-area-coodiv{padding-top:11.25rem!important}}
+@media (min-width: 992px) {.hero-area-coodiv{padding-top: 35vh!important}}
 .hero-area-coodiv .header-hero-backgrounds .montains-01{background:url(../image/header/mount/mount-1.png) no-repeat;position:absolute;right:0;bottom:0;width:780px;height:550px;overflow:hidden;background-size:cover}
 .hero-area-coodiv .header-hero-backgrounds .montains-02{background:url(../image/header/mount/mount-2.png) no-repeat;position:absolute;right:493px;bottom:0;overflow:hidden;width:804px;height:596px}
 .hero-area-coodiv .header-hero-backgrounds .header-erath{background:url(../image/header/earth.png) no-repeat;position:absolute;left:-170px;top:-130px;width:773px;height:287px;overflow:hidden}
@@ -1927,7 +1927,7 @@ ul.footer-list li:hover a.footer-list-link{margin-left:5px;opacity:1}
 /*--- template defrente image,gradient and parallax backgrounds  ---*/
 .with-moon-bg:after{content:'';background:url(../image/header/moon-full.png) no-repeat;position:absolute;right:0;bottom:-20px;width:584px;height:250px;overflow:hidden;z-index:-1}
 .with-planet-bg:after{content:'';background:url(../image/header/planet-3.png) no-repeat;position:absolute;left:-170px;bottom:-308px;width:990px;height:890px;overflow:visble;z-index:-1;background-size:contain}
-.bg-box-gradient-1{background-image:linear-gradient(225deg,#212433 0,#242837 39%,#0e1019 100%);background-image:linear-gradient(225deg,#212433 0,#242837 39%,#0e1019 100%)}
+.bg-box-gradient-1{background-image: url('https://picsum.photos/1920/1080'),background-image:linear-gradient(225deg,#212433 0,#242837 39%,#0e1019 100%);background-image:linear-gradient(225deg,#212433 0,#242837 39%,#0e1019 100%)}
 .bg-wave-box-end{position:absolute;bottom:0;z-index:0;opacity:.02}
 .bg-wave-box-end-z1{position:absolute;bottom:0;z-index:0}
 .bg-wave-box-start-z1{position:absolute;top:0;z-index:0}
