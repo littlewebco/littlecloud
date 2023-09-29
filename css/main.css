@@ -661,7 +661,7 @@ to{background-position:100% 0}
 .hero-area-coodiv.snow-montagne .header-hero-backgrounds .back-mountain-sun{bottom:-116px;right:37px}
 .hero-area-coodiv.snow-montagne .t-first{left:41%;top:111px}
 .safari-browser-mockup .wp-floting-img{position:absolute;width:247px;bottom:20%;left:0;right:0;margin:auto;animation:float 6s ease-in-out infinite}
-.main-text-after-montagne{background:#36364e;position:relative;z-index:2}
+.main-text-after-montagne{background:#222433;position:relative;z-index:2}
 @media(max-width:991px){
 .hero-area-coodiv .header-hero-backgrounds .sunset-main-trees-left,.hero-area-coodiv .header-hero-backgrounds .sunset-main-trees-right{bottom:-220px}
 .safari-browser-mockup .main-ddos-attack-charactuer,.safari-browser-mockup .ddos-attack-mock-waves-tree,.safari-browser-mockup .wp-floting-img{display:none}
@@ -1168,7 +1168,7 @@ ul.footer-list li:hover a.footer-list-link{margin-left:5px;opacity:1}
 .dropdown-mega.triangle-shape:after{position:absolute;bottom:-4px;right:0;border:14px solid;border-color:transparent transparent #e7e9ed transparent;transform:translateX(-50%) translateY(10px);z-index:99!important;opacity:0;transition:.4s;pointer-events:none!important}
 @media(min-width:992px){.dropdown-mega.triangle-shape:after{content:""}
 }@media(min-width:992px){.offcanvas-active.navbar-expand-lg .btn-close-off-canvas{display:none}
-}@media(min-width:320px) and (max-width:992px){.offcanvas-active.navbar-expand-lg .navbar-collapse{display:block;position:fixed;top:0;background:#171a26;left:-100%;padding-left:20px;padding-right:20px;height:100%;transition:left .4s;z-index:999999;box-shadow:0 0 87px 0 rgba(0,0,0,0.09);padding-top:30px;width:250px;overflow-y:auto}
+}@media(min-width:320px) and (max-width:992px){.offcanvas-active.navbar-expand-lg .navbar-collapse{display:block;position:fixed;top:0;background:#171a26;left:-100%;padding-left:20px;padding-right:20px;height:100%;transition:left .4s;z-index:999999;box-shadow: 0 0 30px 0 #222433;padding-top:30px;width:250px;overflow-y:auto}
 }@media(min-width:320px) and (max-width:992px) and (min-width:380px){.offcanvas-active.navbar-expand-lg .navbar-collapse{width:300px}
 }@media(min-width:320px) and (max-width:992px) and (min-width:576px){.offcanvas-active.navbar-expand-lg .navbar-collapse{width:350px}
 }@media(min-width:320px) and (max-width:992px){
