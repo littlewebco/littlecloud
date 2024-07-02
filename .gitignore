@@ -2,3 +2,5 @@
 index-5.html
 Dockerfile
 Archive 
+.DS_Store
+.vscode/launch.json
