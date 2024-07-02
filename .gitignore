@@ -4,3 +4,5 @@ Dockerfile
 Archive 
 .DS_Store
 .vscode/launch.json
+.vscode
+
